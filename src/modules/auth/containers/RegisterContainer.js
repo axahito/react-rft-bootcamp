@@ -1,9 +1,8 @@
 import React from "react";
 import { AuthServices } from "../services/AuthServices"
-import { Form, Input, Checkbox, Button } from "antd";
+import { Form, Input, Button } from "antd";
 
-function RegisterContainer({value, banana}) {
-    console.log(value)
+function RegisterContainer() {
   const onFinish = (values) => {
     AuthServices.postRegisterUser(values)
     console.log("Success:", values);

@@ -1,12 +1,14 @@
 import React from "react";
+import GuestLayout from "../../commons/layouts/guest/GuestLayout";
 import RegisterContainer from "../../modules/auth/containers/RegisterContainer";
 
 function Register() {
-    const testString = "string"
   return (
     <>
-      <div>Registration Page</div>
-      <RegisterContainer value={testString} banana="test"></RegisterContainer>
+      <GuestLayout>
+        <RegisterContainer></RegisterContainer>
+      </GuestLayout>
+      {/* <RegisterContainer value={testString} banana="test"></RegisterContainer> */}
     </>
   );
 }

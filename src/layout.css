@@ -1,0 +1,31 @@
+.guest-layout {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  --bg-opacity: 1;
+  background-color: #f7fafc;
+  background-color: rgb(247, 250, 252);
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  min-height: 100vh;
+}
+
+.guest-content {
+    max-width: 72rem;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+@media (min-width: 640px) {
+  .guest-layout {
+    padding-top: 0;
+    align-items: center;
+  }
+  .guest-content {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
